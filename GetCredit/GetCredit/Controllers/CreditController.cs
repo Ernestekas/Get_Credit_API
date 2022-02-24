@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using GetCredit.Dtos;
+using GetCredit.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GetCredit.Controllers
@@ -7,10 +8,25 @@ namespace GetCredit.Controllers
     [ApiController]
     public class CreditController : ControllerBase
     {
-        [HttpPost]
-        public IActionResult GetRates(decimal creditValue)
+        private readonly CreditService _creditService;
+
+        public CreditController(CreditService creditService)
         {
-            return Ok();
+            _creditService = creditService;
+        }
+
+        [HttpPost]
+        public IActionResult GetRates(CreditRequestDto creditRequest)
+        {
+            try
+            {
+                CreditDetailsDto offer = _creditService.GetOffer(creditRequest);
+                return Ok(offer);
+            }
+            catch
+            {
+                return BadRequest();
+            }
         }
     }
 }
