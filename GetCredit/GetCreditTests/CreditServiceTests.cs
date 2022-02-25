@@ -1,7 +1,6 @@
 using GetCredit.Dtos;
 using GetCredit.Services;
 using GetCredit.Validators;
-using System;
 using Xunit;
 
 namespace GetCreditTests
