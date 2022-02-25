@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetCredit", "GetCredit\GetCredit.csproj", "{3D1960A6-BC03-45B4-9502-417F57C0A55A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GetCredit", "GetCredit\GetCredit.csproj", "{3D1960A6-BC03-45B4-9502-417F57C0A55A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{D0336760-A57E-42DF-901A-015E4AA9B5D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetCreditTests", "GetCreditTests\GetCreditTests.csproj", "{622AC8BD-15CA-40D6-BC8A-C3B9BB789BCB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +19,16 @@ Global
 		{3D1960A6-BC03-45B4-9502-417F57C0A55A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D1960A6-BC03-45B4-9502-417F57C0A55A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D1960A6-BC03-45B4-9502-417F57C0A55A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{622AC8BD-15CA-40D6-BC8A-C3B9BB789BCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{622AC8BD-15CA-40D6-BC8A-C3B9BB789BCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{622AC8BD-15CA-40D6-BC8A-C3B9BB789BCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{622AC8BD-15CA-40D6-BC8A-C3B9BB789BCB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{622AC8BD-15CA-40D6-BC8A-C3B9BB789BCB} = {D0336760-A57E-42DF-901A-015E4AA9B5D5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A7292BB4-1DF8-409C-BD7D-F234139D0667}
